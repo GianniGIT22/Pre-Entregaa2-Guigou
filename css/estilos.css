@@ -1,0 +1,54 @@
+/* reset */
+
+
+
+
+.ClassPadre{
+    display: grid;
+    grid-template-areas: 
+    "header header header Inicio"
+    "main main main main"
+    "Commpra Compra Compra Compra"
+    "Marcas Marcas Marcas Marcas"
+    "footer footer footer footer"
+    ;
+
+   
+}
+
+header{
+    grid-area: header;
+}
+
+header img{
+    height:6rem;
+    grid-area: img;
+    
+    
+    
+}
+
+body{
+    background-image: linear-gradient(to right,#bdc3c7,#2c3e50);
+}
+
+
+main{
+    grid-area: main;
+}
+
+.NavInicio{
+    grid-area: Inicio;
+}
+
+.NavCompra{
+    grid-area: Compra;
+}
+
+.Marcas{
+    grid-area: Marcas;
+}
+
+footer{
+    grid-area: footer;
+}
