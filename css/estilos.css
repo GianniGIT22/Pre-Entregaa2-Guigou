@@ -2,7 +2,7 @@
 
 
 
-
+/* estilos pagina principal */
 .ClassPadre{
     display: grid;
     grid-template-areas: 
@@ -13,7 +13,6 @@
     "footer footer footer footer"
     ;
 
-   
 }
 
 header{
@@ -22,33 +21,89 @@ header{
 
 header img{
     height:6rem;
-    grid-area: img;
-    
-    
+    grid-area: img; 
     
 }
 
 body{
     background-image: linear-gradient(to right,#bdc3c7,#2c3e50);
+    gap: 5rem;
+    
+
 }
 
 
 main{
     grid-area: main;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 .NavInicio{
     grid-area: Inicio;
+    display: flex;
 }
 
 .NavCompra{
     grid-area: Compra;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+ 
+}
+
+.SectionMarca{
+    display: flex;
+
+}
+
+section div img{
+    width: 7rem;
+    height: 7rem;
 }
 
 .Marcas{
     grid-area: Marcas;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
+
+
+
 
 footer{
     grid-area: footer;
+}
+/* estilo pagina accesorios */
+
+.BodyAcce{
+    display: grid;
+    grid-template-areas:
+    "headerAcce navAcce navAcce"
+    "mainAcce navAcce navAcce"
+    "mainAcce navAcce navAcce"
+    "footerAcce footerAcce footerAcce"
+
+    ;
+}
+
+.headerAcce{
+    grid-area: headerAcce ;
+}
+
+.mainAcce{
+    grid-area: mainAcce;
+}
+
+.navAccesorios{
+    grid-area: navAcce;
+    display: flex;
+    
+}
+
+.footerAcce{
+    grid-area: footerAcce;
 }
