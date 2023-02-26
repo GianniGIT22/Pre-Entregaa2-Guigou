@@ -1,70 +1,79 @@
 /* reset */
 
 
+    
+
 
 /* estilos pagina principal */
-.ClassPadre{
+.ClassPadre {
     display: grid;
-    grid-template-areas: 
-    "header header header Inicio"
-    "main main main main"
-    "Commpra Compra Compra Compra"
-    "Marcas Marcas Marcas Marcas"
-    "footer footer footer footer"
+    grid-template-areas:
+        "header header header Inicio"
+        "main main main main"
+        "Commpra Compra Compra Compra"
+        "Marcas Marcas Marcas Marcas"
+        "footer footer footer footer"
     ;
 
 }
 
-header{
+header {
     grid-area: header;
 }
 
-header img{
-    height:6rem;
-    grid-area: img; 
-    
-}
-
-body{
-    background-image: linear-gradient(to right,#bdc3c7,#2c3e50);
-    gap: 5rem;
-    
+header img {
+    height: 6rem;
+    grid-area: img;
 
 }
 
+body {
+    background-image: linear-gradient(to right, #bdc3c7, #2c3e50);
+    gap: 2rem;
 
-main{
+
+}
+
+
+main img {
+    width: 70rem;
+    height: 30rem;
+
+}
+
+
+main {
     grid-area: main;
     display: flex;
     justify-content: center;
-    
-    
+
+
 }
 
-.NavInicio{
+.NavInicio {
     grid-area: Inicio;
     display: flex;
 }
 
-.NavCompra{
+.NavCompra {
     grid-area: Compra;
     display: flex;
     align-items: center;
     gap: 10rem;
- 
+
 }
 
-.SectionMarca{
+.SectionMarca {
     display: flex;
 
 }
 
-section div img{
+section div img {
     width: 7rem;
     height: 7rem;
 }
 
-.Marcas{
+.Marcas {
     grid-area: Marcas;
     display: flex;
     align-items: center;
@@ -74,36 +83,96 @@ section div img{
 
 
 
-footer{
+footer {
     grid-area: footer;
 }
+
 /* estilo pagina accesorios */
 
-.BodyAcce{
+.BodyAcce {
     display: grid;
     grid-template-areas:
-    "headerAcce navAcce navAcce"
-    "mainAcce navAcce navAcce"
-    "mainAcce navAcce navAcce"
-    "footerAcce footerAcce footerAcce"
+        "headerAcce navAcce navAcce"
+        "mainAcce navAcce navAcce"
+        "mainAcce navAcce navAcce"
+        "footerAcce footerAcce footerAcce"
 
     ;
 }
 
-.headerAcce{
-    grid-area: headerAcce ;
+.headerAcce {
+    grid-area: headerAcce;
 }
 
-.mainAcce{
+.mainAcce {
     grid-area: mainAcce;
 }
 
-.navAccesorios{
+.navAccesorios {
     grid-area: navAcce;
     display: flex;
+
+}
+
+.footerAcce {
+    grid-area: footerAcce;
+}
+
+/* Estilos de pagina bicicletas */
+
+.BicicletaPadre {
+    display: grid;
+    grid-template-areas:
+        "HeaderBicis HeaderBicis"
+        "MainBicis MainBicis"
+        "FooterBicis FooterBicis";
+}
+
+.HeaderBicis {
+    grid-area: HeaderBicis;
+}
+
+.MainBicis {
+    grid-area: MainBicis;
+
+}
+
+.FooterBicis {
+    grid-area: FooterBicis;
+}
+
+/* estilos de pagina cascos */
+
+.PadreCascos {
+    display: grid;
+    grid-template-areas:
+        "HeaderCascos HeaderCascos "
+        "MainCascos MainCascos "
+        "FooterCascos FooterCascos";
+
+}
+
+
+.HeaderCascos {
+    grid-area: HeaderCascos;
+}
+
+.MainCascos {
+    grid-area: MainCascos;
+
+}
+
+.section-cascos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70rem;
+    height: 5rem;
+    gap: 2rem;
     
 }
 
-.footerAcce{
-    grid-area: footerAcce;
+.FooterCascos {
+    grid-area: FooterCascos;
 }
+
